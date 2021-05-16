@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    --color-1:rgb(37,37,38);
+    --color-2:rgb(60,60,60);
+    --color-3:rgb(0,0,0);
+    --color-4:rgb(206,203,192);
+    --color-5:rgb(255,255,255);
+    --color-6:rgb(8,120,41);
+}
+
+body{
+    font-size: 18px;
+    color:var(--color-5);
+    font-family: "Poppins";
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-2);
+    height: 50px;
+    width: 100%;
+}
+
+#hd1{
+    font-family: "Poppins", sans-serif;
+    color:var(--color-5);
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+#hd1 a{
+    color:var(--color-5);
+    text-decoration:none;
+}
+
+#hd1 h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#section1{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 50px);
+    background: var(--color-1);
+    padding:50px;
+}
+
+#s1d1{
+    width: 50%;
+}
+
+.codearea{
+    font-size: 16px;
+    font-family: "Consolas";
+    background: var(--color-3);
+    color:var(--color-4);
+    border-radius: 10px;
+    margin: 10px 0px;
+    width:80%;
+    height: 400px;
+    resize: none;
+    white-space: pre-line;
+    outline: none;
+    border: none;
+    padding: 20px 30px;
+    transition: 0.5s ease;
+    margin-bottom: 0;
+}
+
+#section2{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--color-1);
+    padding:50px;
+}
+
+#htmlbpcheckdiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#htmlbpcheckdiv div{
+    margin:5px;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+#htmlbpcheckdiv div:nth-child(1){
+    margin-left: 0px;
+}
+
+#htmlbpcheckdiv div label{
+    cursor: pointer;
+}
+
+#htmlbpcheckdiv div label input[type='checkbox']{
+    display: none;
+}
+
+#htmlbpcheckdiv div label span{
+    position: relative;
+    display: inline-block;
+    background: var(--color-2);
+    padding: 5px 10px;
+    font-size: 16px;
+    color:var(--color-5);
+    border-radius: 5px;
+    transition: 0.2s;
+    user-select: none;
+}
+
+#htmlbpcheckdiv div label input[type='checkbox']:checked ~ span
+{
+    background: var(--color-5);
+    color:var(--color-1)
+} 
+
+#htmlinput {
+    margin-top: 5px;
+}
+
+.htmlinput{
+    font-family: "Poppins";
+    background: var(--color-2);
+    border:none;
+    font-size: 16px;
+    color:var(--color-5);
+    border-radius: 5px;
+    transition: 0.2s;
+    user-select: none;
+    padding: 5px 10px;
+    outline: none;
+}
+
+#gfontins{
+    font-family: "Poppins";
+    background: var(--color-2);
+    border:none;
+    font-size: 16px;
+    color:var(--color-5);
+    border-radius: 5px;
+    transition: 0.2s;
+    user-select: none;
+    padding: 5px 10px;
+    outline: none;
+    width:fit-content;
+}
+
+.copy{
+    font-family: "Poppins";
+    background: var(--color-6);
+    border:none;
+    font-size: 16px;
+    color:var(--color-5);
+    border-radius: 5px;
+    transition: 0.2s;
+    user-select: none;
+    padding: 5px 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+#htmlbp::after{
+    content: "";
+    height: 100px;
+    width: 100px;
+    background: white;
+    z-index: 1000;
+    position: absolute;
+}
+
+#htmlcsspath, #htmljspath{
+    display: none;
+}

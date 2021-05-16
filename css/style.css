@@ -1,0 +1,103 @@
+@font-face {font-family: "Consolas";
+    src: url("/font/1db29588408eadbd4406aae9238555eb.eot"); /* IE9*/
+    src: url("/font/1db29588408eadbd4406aae9238555eb.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/font/1db29588408eadbd4406aae9238555eb.woff2") format("woff2"), /* chrome、firefox */
+    url("/font/1db29588408eadbd4406aae9238555eb.woff") format("woff"), /* chrome、firefox */
+    url("/font/1db29588408eadbd4406aae9238555eb.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("/font/1db29588408eadbd4406aae9238555eb.svg#Consolas") format("svg"); /* iOS 4.1- */
+  }
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    --color-1:rgb(37,37,38);
+    --color-2:rgb(60,60,60);
+    --color-3:rgb(0,0,0);
+    --color-4:rgb(206,203,192);
+    --color-5:rgb(255,255,255);
+}
+
+body{
+    font-size: 18px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-2);
+    height: 50px;
+    width: 100%;
+}
+
+#hd1{
+    font-family: "Poppins", sans-serif;
+    color:var(--color-5);
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+#hd1 h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#section1{
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 50px);
+    background: var(--color-1);
+}
+
+#s1d1{
+    font-family: "Poppins";
+    color:var(--color-5);
+    padding: 50px; 
+    width: 50%;
+}
+
+#s1d1d1{
+    margin-top: 100px;
+}
+
+#s1d1d1 button{
+    border: none;
+    outline: none;
+    background: var(--color-2);
+    padding: 8px;
+    border-radius: 5px;
+    color: var(--color-5);
+    font-family: 'Poppins';
+    margin:5px 2px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#s1d1d1 button:hover{
+    color: var(--color-1);
+    background: var(--color-5);
+}
+
+#s1d2{
+    align-self: flex-end;
+    width: 40%;
+    margin: 10px 50px;
+}
+
+#s1d2 div{
+    font-size: 16px;
+    font-family: "Consolas";
+    background: var(--color-3);
+    color:var(--color-4);
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    height: 10%;
+    
+    /* letter-spacing: 1px; */
+}
+
+#abouta{
+    color: rgb(0, 150, 255);
+}

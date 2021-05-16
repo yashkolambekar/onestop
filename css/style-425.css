@@ -1,0 +1,39 @@
+@media (max-width:425px){
+
+    header{
+        align-items: center;
+        height: 50px;
+    }
+
+    #hd1{
+        margin-left: 0;
+    }
+
+    #hd1 h1{
+        font-size: 20px;
+    }
+
+    body{
+        font-size:18px;
+    }
+
+    #section1{
+        flex-direction: column;
+    }
+
+    #s1d1{
+        padding: 15px;
+        width: 100%;
+    }
+
+    #s1d2{
+        margin:10px 15px;
+        width: 100%;
+        align-self: center;
+    }
+
+    #s1d2 div{
+        margin:15px;
+    }
+
+}

@@ -1,0 +1,48 @@
+@media (max-width:425px){
+
+    header{
+        align-items: center;
+        height: 50px;
+    }
+
+    #hd1{
+        margin-left: 0;
+    }
+
+    #hd1 h1{
+        font-size: 20px;
+    }
+
+    #section1{
+        padding: 15px;
+        display: none;
+    }
+
+    #s1d1{
+        width:100%;
+    }
+
+    #section2{
+        padding:15px;
+    }
+
+    .codearea{
+        width:100%;
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    #htmlbpcheckdiv div label span{
+        padding: 3px 6px;
+        font-size: 15px;
+        color:var(--color-5);
+        border-radius: 5px;
+        transition: 0.2s;
+        user-select: none;
+        flex-wrap: wrap;
+    }
+
+    .htmlinput{
+        margin-bottom: 10px;
+    }
+}

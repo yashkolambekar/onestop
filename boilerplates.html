@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href='css/boilerplates.css' rel="stylesheet">
+    <link href='css/boilerplates-425.css' rel="stylesheet">
+    <script src='js/boilerplates.js'></script>
+    <title>OneStop</title>
+</head>
+
+<body onload="init()">
+    <header>
+        <div id="hd1">
+            <a href='index.html'>
+                <h1>OneStop</h1>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div id="section1">
+            <div id="s1d1">
+                <h2>BoilerPlates</h2>
+                <p>Templates or BoilerPlates are reusable pieces of code that can be applied/used in projects without
+                    changing it much and this is a legit practice, not only in the programming and development sector
+                    but also in law and documentation etc.<br />
+                    <br />
+                    The codes given below can be used in your every single project, so make sure you bookmark this site!
+                </p>
+            </div>
+        </div>
+        <div id="section2">
+            <div id="htmlbpdiv">
+                <h4>HTML</h4>
+                <div id='htmlbpcheckdiv'>
+                    <div>
+                        <label>
+                            <input onchange="bp()" id='html-no-cache' type='checkbox'>
+                            <span class='checklist'>No Cache</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input onchange="bp()" id='html-stylesheet' type='checkbox'>
+                            <span class='checklist'>Link CSS</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input onchange="bp()" id='html-script' type='checkbox'>
+                            <span class='checklist'>Link JS</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input onchange="bp()" id='html-meta-des' type='checkbox'>
+                            <span class='checklist'>Meta Description</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input onchange="bp()" id='html-bootstrap' type='checkbox'>
+                            <span class='checklist'>Bootstrap CDN</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input onchange="bp()" id='html-font' type='checkbox'>
+                            <span class='checklist'>Font Awesome CDN</span>
+                        </label>
+                    </div>
+
+                </div>
+                <div id="htmlinput">
+                    <input class='htmlinput' id='htmldoctitle' oninput="bp()" type="text" placeholder="Title">
+                    <input class='htmlinput' id='htmlcsspath' oninput="bp()" type="text" placeholder="CSS Path (href)">
+                    <input class='htmlinput' id='htmljspath' oninput="bp()" type="text" placeholder="JS Path (src)">
+                </div>
+                <textarea id='htmlbp' class='codearea'></textarea>
+                <div>
+                    <button onclick="htmlbpcopy()" class='copy'>Copy</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
