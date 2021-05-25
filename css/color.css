@@ -1,0 +1,65 @@
+.width50{
+    width: 50%;
+}
+
+.section{
+    flex-direction: column;
+}
+
+.b-red{
+    background: red;
+    padding:0px 10px;
+    border-radius: 3px;
+    border:none;
+}
+
+.b-green{
+    background: green;
+    padding:0px 10px;
+    border-radius: 3px;
+    border:none;
+}
+
+.b-blue{
+    background: blue;
+    padding:0px 10px;
+    border-radius: 3px;
+    border:none;
+}
+
+
+
+
+
+
+.color-b{
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+}
+
+#color-b-1 div{
+    padding: 50px 100px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#color-b-1 div input{
+    background: rgba(0,0,0,0.5);
+    color:white;
+    border:none;
+    border-radius: 10px;
+    font-family: "Poppins";
+    font-size: 16px;
+    text-align: center;
+    outline:none;
+    -moz-appearance: textfield;
+}
+
+#color-b-1 div input::-webkit-outer-spin-button,
+#color-b-1 div input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

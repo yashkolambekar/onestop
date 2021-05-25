@@ -1,13 +1,25 @@
+@font-face {font-family: "Consolas";
+    src: url("/font/1db29588408eadbd4406aae9238555eb.eot"); /* IE9*/
+    src: url("/font/1db29588408eadbd4406aae9238555eb.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/font/1db29588408eadbd4406aae9238555eb.woff2") format("woff2"), /* chrome、firefox */
+    url("/font/1db29588408eadbd4406aae9238555eb.woff") format("woff"), /* chrome、firefox */
+    url("/font/1db29588408eadbd4406aae9238555eb.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("/font/1db29588408eadbd4406aae9238555eb.svg#Consolas") format("svg"); /* iOS 4.1- */
+  }
+
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    --color-1:rgb(37,37,38);
-    --color-2:rgb(60,60,60);
-    --color-3:rgb(0,0,0);
+    
+    --color-1:#070417;
+    --color-2:#1b1827;
+    --color-3:#111125;
     --color-4:rgb(206,203,192);
     --color-5:rgb(255,255,255);
-    --color-6:rgb(8,120,41);
+    --color-6:#5138EE;
+    --color-7:rgb(120, 120, 120);
 }
 
 body{
@@ -40,6 +52,7 @@ header{
 #hd1 h1{
     font-size: 25px;
     font-weight: bold;
+    color:var(--color-5);
 }
 
 #section1{
@@ -52,6 +65,19 @@ header{
 
 #s1d1{
     width: 50%;
+}
+
+#s1d2{
+    width: 50%;
+    margin: 40px 0px;
+    font-size: 16px;
+    font-family: "Consolas";
+    background: var(--color-3);
+    color:var(--color-4);
+    padding: 20px 20px;
+    border-radius: 10px;
+    
+    /* letter-spacing: 1px; */
 }
 
 .codearea{
@@ -72,7 +98,12 @@ header{
     margin-bottom: 0;
 }
 
-#section2{
+.codearea::selection {
+    color: var(--color-5);
+    background: var(--color-6);
+  }
+
+#section2, #section3, #section4{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -80,30 +111,26 @@ header{
     padding:50px;
 }
 
-#htmlbpcheckdiv{
+.bpcheckdiv{
     display: flex;
     flex-wrap: wrap;
 }
 
-#htmlbpcheckdiv div{
+.bpcheckdiv div{
     margin:5px;
     margin-left: 0px;
     margin-right: 10px;
 }
 
-#htmlbpcheckdiv div:nth-child(1){
-    margin-left: 0px;
-}
-
-#htmlbpcheckdiv div label{
+.bpcheckdiv div label{
     cursor: pointer;
 }
 
-#htmlbpcheckdiv div label input[type='checkbox']{
+.bpcheckdiv div label input[type='checkbox']{
     display: none;
 }
 
-#htmlbpcheckdiv div label span{
+.bpcheckdiv div label span{
     position: relative;
     display: inline-block;
     background: var(--color-2);
@@ -115,17 +142,17 @@ header{
     user-select: none;
 }
 
-#htmlbpcheckdiv div label input[type='checkbox']:checked ~ span
+.bpcheckdiv div label input[type='checkbox']:checked ~ span
 {
-    background: var(--color-5);
-    color:var(--color-1)
+    background: var(--color-6);
+    color:var(--color-5)
 } 
 
-#htmlinput {
+.inputdiv {
     margin-top: 5px;
 }
 
-.htmlinput{
+.input{
     font-family: "Poppins";
     background: var(--color-2);
     border:none;
@@ -136,20 +163,6 @@ header{
     user-select: none;
     padding: 5px 10px;
     outline: none;
-}
-
-#gfontins{
-    font-family: "Poppins";
-    background: var(--color-2);
-    border:none;
-    font-size: 16px;
-    color:var(--color-5);
-    border-radius: 5px;
-    transition: 0.2s;
-    user-select: none;
-    padding: 5px 10px;
-    outline: none;
-    width:fit-content;
 }
 
 .copy{
@@ -159,22 +172,61 @@ header{
     font-size: 16px;
     color:var(--color-5);
     border-radius: 5px;
-    transition: 0.2s;
+    transition: 0.1s;
     user-select: none;
     padding: 5px 30px;
     outline: none;
     cursor: pointer;
 }
 
-#htmlbp::after{
-    content: "";
-    height: 100px;
-    width: 100px;
-    background: white;
-    z-index: 1000;
-    position: absolute;
+.copy:hover{
+    box-shadow: 0px 0px 150px 1px var(--color-6);
 }
 
-#htmlcsspath, #htmljspath{
+#section3, #section4{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--color-1);
+    padding:50px;
+}
+
+#htmlcsspath, #htmljspath, #htmlmeta, #cssfontsize, #cssfontfamily, #cssbackground, #csscolor{
     display: none;
+}
+
+footer{
+    display: flex;
+    font-size: 14px;
+    padding: 20px 50px;
+    background-color: var(--color-2);
+    width: 100%;
+}
+
+footer a{
+    color:var(--color-6);
+    cursor: pointer;
+}
+
+footer div:nth-child(2){
+    flex:1;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer div:nth-child(2) a i{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+footer div:nth-child(2) a{
+    color: var(--color-5);
+    transition: 0.2s;
+}
+
+footer div:nth-child(2) a:hover{
+    color: var(--color-6);
+    filter: drop-shadow( 0px 0px 10px var(--color-6));
 }

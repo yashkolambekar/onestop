@@ -11,15 +11,19 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    --color-1:rgb(37,37,38);
-    --color-2:rgb(60,60,60);
-    --color-3:rgb(0,0,0);
+
+    --color-1:#070417;
+    --color-2:#1b1827;
+    --color-3:#111125;
     --color-4:rgb(206,203,192);
     --color-5:rgb(255,255,255);
+    --color-6:#5138EE;
 }
 
 body{
     font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color:var(--color-5);
 }
 
 header{
@@ -38,12 +42,18 @@ header{
     margin-left: 50px;
 }
 
+
+#hd1 a{
+    color:var(--color-5);
+    text-decoration:none;
+}
+
 #hd1 h1{
     font-size: 25px;
     font-weight: bold;
 }
 
-#section1{
+#section1, .section{
     display: flex;
     flex-direction: row;
     min-height: calc(100vh - 50px);
@@ -75,8 +85,8 @@ header{
 }
 
 #s1d1d1 button:hover{
-    color: var(--color-1);
-    background: var(--color-5);
+    color: var(--color-5);
+    background: var(--color-6);
 }
 
 #s1d2{
@@ -90,7 +100,7 @@ header{
     font-family: "Consolas";
     background: var(--color-3);
     color:var(--color-4);
-    padding: 20px 10px;
+    padding: 20px 20px;
     border-radius: 10px;
     margin: 20px 0px;
     height: 10%;
@@ -99,5 +109,46 @@ header{
 }
 
 #abouta{
-    color: rgb(0, 150, 255);
+    color: var(--color-6);
+}
+
+
+footer{
+    display: flex;
+    font-size: 14px;
+    padding: 20px 50px;
+    background-color: var(--color-2);
+    width: 100%;
+}
+
+footer a{
+    color:var(--color-6);
+    cursor: pointer;
+}
+
+footer div:nth-child(2){
+    flex:1;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer div:nth-child(2) a i{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+footer div:nth-child(2) a{
+    color: var(--color-5);
+    transition: 0.2s;
+}
+
+footer div:nth-child(2) a:hover{
+    color: var(--color-6);
+    filter: drop-shadow( 0px 0px 10px var(--color-6));
+}
+
+.section{
+    padding: 50px;
 }

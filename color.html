@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-425.css" rel="stylesheet">
+    <link href="css/color.css" rel="stylesheet">
+    <script src="js/color.js"></script>
+    <title>OneStop - Color</title>
+</head>
+<body onload="init()">
+    <header>
+        <div id="hd1">
+            <a href='index.html'>
+                <h1>OneStop</h1>
+            </a>
+        </div>
+    </header>
+
+    <div class="section">
+        <h2>Everything about Colors</h2>
+        <div class="width50">
+            This page will be a solid guide for you to deal with colors and some tools to make your life easier
+        </div>
+        <br/>
+        <br/>
+        <div>
+            To start with let's learn first about the basic of Colors<br/>
+            <span class="b-red">Red</span>, <span class="b-green">Green</span> and <span class="b-blue">Blue</span> are primary colors every and other color that we see is made by mixing these three colors in sepcific quantities 
+            <br/>
+            <br/>
+            In HTML we can specify colors with by specifying their names, by specifying their hex values or by specifying the rgb value, out of all these rgb values method is best for us to learn about colors
+            <br>
+            <br>
+            It looks like this, <br>
+            <span class="b-red">rgb(255, 0, 0);</span>, 
+            <span class="b-green">rgb(0, 255, 0);</span>,
+            <span class="b-blue">rgb(0, 0, 255);</span>
+            <br>
+            <br>
+            To get an idea of how it works, rgb(rrr, ggg, bbb) here the r's inside the parenthesis or the brackets define the value of red in that particular color, it cam vary from 0 to 255 it's quite self explainatory that 0 means no red will be included and 255 means the most it can<br>
+            The same goes with the g's for green and b's for blue<br>
+            If we turn everything to 0, the color will be black and if we turn everything to 255, the color will be white<br>
+            <br>
+            To understand this better, tweak the value in the section below and see how to color changes
+        </div>
+        <br>
+        <br>
+        <p>Use the arrow up and down keys to change the values for a better understanding</p>
+        <div id='color-b-1' class='color-b'>
+            <div>
+                rgb(<input id='rrr' min="0" max='255' placeholder='RRR' value="255" oninput="bcolor1()" type='number'>,
+                <input  id='ggg' min="0" max='255'  placeholder='GGG' value="255" oninput="bcolor1()" type='number'>,
+                <input id='bbb'  placeholder='BBB' min="0" max='255' value="255" oninput="bcolor1()" type='number'>);
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>Feel free to write a review and give suggestions <a>here</a></p>
+            <p>&copy; Yash Kolambekar 2021</p>
+        </div>
+        <div>
+            <a href='https://instagram.com/yashdidit'>
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href='https://instagram.com/yashdidit'>
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href='mailto:yashskolambekar2015@gmail.com'>
+                <i class="far fa-envelope"></i>
+            </a>
+
+            <a href='https://instagram.com/yashdidit'>
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

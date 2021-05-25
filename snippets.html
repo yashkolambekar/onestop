@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <script src="https://kit.fontawesome.com/ffa8dd9570.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href='css/style.css' rel="stylesheet">
+    <link href='css/snippets.css' rel="stylesheet">
+    <link href='css/style-425.css' rel="stylesheet">
+    <script src='js/snippets.js'></script>
+    <title>OneStop - Useful Codes</title>
+</head>
+
+<body>
+    <header>
+        <div id="hd1">
+            <a href='index.html'>
+                <h1>OneStop</h1>
+            </a>
+        </div>
+    </header>
+
+    <div class="section1">
+
+        <div class="s1">
+            <input id="s1i1" name="accordion-1" type="checkbox" />
+            <label for="s1i1">Restrict users from viewing your code (HTML+CSS+JS)</label>
+            <div class="textarea">
+                <p>In this competitive world, sometimes there will be circumstances where you will need to show your
+                    creations, but at the same time you don't want to show your source code to anyone<br />
+                    <br />
+                    This is by default in PHP, but to do this in HTML gets a bit tricky and uneasy<br />
+                    Here, I will be showing you how to <span class="b">hide your HTML and Javascript</span>
+                    code<br /><br />
+                    <br />
+                    Step 1<br />
+                    The code given below will Restrict users from inspecting the elements by disabling the context menu
+                    (right click) and also disabling some keyboard actions such as F12, Ctrl + U, Ctrl + Shift + I and
+                    so on<br />
+                    It's okay to an extent to disbale these keys but disabling the context menu is not recommended
+                </p>
+                <div class="code">
+                    <pre><span class="w">// To be pasted in JS file</span>
+document.onkeydown = function(e) {
+    if(event.keyCode == 123) {
+        return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+        return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+        return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+        return false;
+    }
+}</pre>
+                </div>
+                <p>
+                    <br />
+                    Now we have prevented the user from opening the inspection panel and from viewing the source code
+                    but if the user disables the Javascript, our code will not be executed and user can view the source
+                    code to prevent this we have to do something which will stop the user from disabling the
+                    Javascript<br /><br />
+                    So we will make some changes to the code, that the webpage will be shown only if the Javascript is
+                    turned on<br />
+                    To do this we will give a <span class="b">class</span> to elements with the same display property,
+                    for example the display property of header, section-one and footer is flex, we will give it a common
+                    class named <span class="b">shown-on-js</span><br />
+                <div class="code">
+                    <pre><span class="w">&#60;&#33;-- HTML Code--&#62;</span>
+&#60;header class="show-on-js"&#62;&#60;/header&#62;
+&#60;div id="section-one" class="show-on-js"&#62;&#60;/div&#62;
+&#60;footer class="show-on-js"&#62;&#60;/footer&#62;</pre>
+                </div><br />
+                Now we will set the display property of this class to none, so the elements will not be shown initially
+                <div class="code">
+                    <pre><span class="w">/* CSS */</span>
+.show-on-js{
+    display: none;
+}</pre>
+                </div>
+                <br />
+                So now these elements will not be shown on the webpage initially, now we will make it visible through
+                Javascript, so now it will be shown only if the Javascript is turned on
+                <div class='code'>
+                    <pre><span class="w">// Javascript code</span>
+document.querySelectorAll(".show-on-js").display = block;</pre>
+                </div>
+                <br/>
+                Make sure that all the elements are suitable for the particular display property.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div>
+            <p>Feel free to write a review and give suggestions <a>here</a></p>
+            <p>&copy; Yash Kolambekar 2021</p>
+        </div>
+        <div>
+            <a href='https://instagram.com/yashdidit'>
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href='https://instagram.com/yashdidit'>
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href='mailto:yashskolambekar2015@gmail.com'>
+                <i class="far fa-envelope"></i>
+            </a>
+
+            <a href='https://instagram.com/yashdidit'>
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

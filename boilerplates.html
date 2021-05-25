@@ -8,16 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
+    <script src="https://kit.fontawesome.com/ffa8dd9570.js" crossorigin="anonymous"></script>
     <meta http-equiv="Expires" content="0">
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href='css/boilerplates.css' rel="stylesheet">
     <link href='css/boilerplates-425.css' rel="stylesheet">
     <script src='js/boilerplates.js'></script>
-    <title>OneStop</title>
+    <title>OneStop - Boilerplates</title>
 </head>
 
 <body onload="init()">
@@ -39,61 +38,214 @@
                     The codes given below can be used in your every single project, so make sure you bookmark this site!
                 </p>
             </div>
+            <div id="s1d2">
+                <p>Code in the textbox is editable!
+                    <br /><br />
+                    Do not select/unselect any option after editing the code manually as it will reset the code and
+                    manually edited changes will be lost
+                    <br /><br />
+                    Code will reset after refresh
+                </p>
+            </div>
         </div>
         <div id="section2">
-            <div id="htmlbpdiv">
+            <div class='bpdiv'>
                 <h4>HTML</h4>
-                <div id='htmlbpcheckdiv'>
+                <div class='bpcheckdiv'>
                     <div>
                         <label>
-                            <input onchange="bp()" id='html-no-cache' type='checkbox'>
-                            <span class='checklist'>No Cache</span>
+                            <input checked="true" onchange="fnhtmlbp()" id='html-lang' type='checkbox'>
+                            <span class='checklist'>Language</span>
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input onchange="bp()" id='html-stylesheet' type='checkbox'>
+                            <input checked="true" onchange="fnhtmlbp()" id='html-charset' type='checkbox'>
+                            <span class='checklist'>Character Set</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input checked="true" onchange="fnhtmlbp()" id='html-xua' type='checkbox'>
+                            <span class='checklist'>UA = Edge</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input checked="true" onchange="fnhtmlbp()" id='html-viewport' type='checkbox'>
+                            <span class='checklist'>Viewport</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input onchange="fnhtmlbp()" id='html-stylesheet' type='checkbox'>
                             <span class='checklist'>Link CSS</span>
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input onchange="bp()" id='html-script' type='checkbox'>
+                            <input onchange="fnhtmlbp()" id='html-script' type='checkbox'>
                             <span class='checklist'>Link JS</span>
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input onchange="bp()" id='html-meta-des' type='checkbox'>
+                            <input onchange="fnhtmlbp()" id='html-no-cache' type='checkbox'>
+                            <span class='checklist'>No Cache</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input onchange="fnhtmlbp()" id='html-meta-des' type='checkbox'>
                             <span class='checklist'>Meta Description</span>
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input onchange="bp()" id='html-bootstrap' type='checkbox'>
+                            <input onchange="fnhtmlbp()" id='html-bootstrap' type='checkbox'>
                             <span class='checklist'>Bootstrap CDN</span>
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input onchange="bp()" id='html-font' type='checkbox'>
+                            <input onchange="fnhtmlbp()" id='html-font' type='checkbox'>
                             <span class='checklist'>Font Awesome CDN</span>
                         </label>
                     </div>
 
                 </div>
-                <div id="htmlinput">
-                    <input class='htmlinput' id='htmldoctitle' oninput="bp()" type="text" placeholder="Title">
-                    <input class='htmlinput' id='htmlcsspath' oninput="bp()" type="text" placeholder="CSS Path (href)">
-                    <input class='htmlinput' id='htmljspath' oninput="bp()" type="text" placeholder="JS Path (src)">
+                <div class="inputdiv">
+                    <input class='input' autocomplete='off' id='htmldoctitle' oninput="fnhtmlbp()" type="text"
+                        placeholder="Title">
+                    <input class='input' autocomplete='off' id='htmlcsspath' oninput="fnhtmlbp()" type="text"
+                        placeholder="CSS Path (href)">
+                    <input class='input' autocomplete='off' id='htmljspath' oninput="fnhtmlbp()" type="text"
+                        placeholder="JS Path (src)">
+                    <input class='input' autocomplete='off' id='htmlmeta' oninput="fnhtmlbp()" type="text"
+                        placeholder="Description Content">
                 </div>
-                <textarea id='htmlbp' class='codearea'></textarea>
+                <textarea spellcheck="false" id='htmlbp' class='codearea'></textarea>
                 <div>
                     <button onclick="htmlbpcopy()" class='copy'>Copy</button>
                 </div>
             </div>
         </div>
+        <div id="section3">
+            <div class='bpdiv'>
+                <h4>CSS</h4>
+                <div class="bpcheckdiv">
+                    <div>
+                        <label>
+                            <input checked='true' onchange="fncssbp()" id='css-margin' type='checkbox'>
+                            <span class='checklist'>0 Margin</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input checked='true' onchange="fncssbp()" id='css-padding' type='checkbox'>
+                            <span class='checklist'>0 Padding</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input checked='true' onchange="fncssbp()" id='css-box' type='checkbox'>
+                            <span class='checklist'>Border box</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input onchange="fncssbp()" id='css-bw' type='checkbox'>
+                            <span class='checklist'>B/W</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input onchange="fncssbp()" id='css-fs' type='checkbox'>
+                            <span class='checklist'>Font size</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input onchange="fncssbp()" id='css-ff' type='checkbox'>
+                            <span class='checklist'>Font Family</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input onchange="fncssbp()" id='css-bg' type='checkbox'>
+                            <span class='checklist'>Background</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input onchange="fncssbp()" id='css-color' type='checkbox'>
+                            <span class='checklist'>Color</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="inputdiv">
+                    <input class='input' autocomplete='off' id='cssfontsize' oninput="fncssbp()" type="text"
+                        placeholder="Font Size">
+                    <input class='input' autocomplete='off' id='cssfontfamily' oninput="fncssbp()" type="text"
+                        placeholder="Font Family">
+                    <input class='input' autocomplete='off' id='cssbackground' oninput="fncssbp()" type="text"
+                        placeholder="Background">
+                    <input class='input' autocomplete='off' id='csscolor' oninput="fncssbp()" type="text"
+                        placeholder="Color">
+                </div>
+                <textarea spellcheck="false" id='cssbp' class='codearea'></textarea>
+                <div>
+                    <button onclick="cssbpcopy()" class='copy'>Copy</button>
+                </div>
+            </div>
+        </div>
+        <div id="section4">
+            <div class="bpdiv">
+                <h4>JavaScript</h4>
+                <div class="bpcheckdiv">
+                    <div>
+                        <label>
+                            <input checked="true" onchange="fnjsbp()" id='js-strict' type='checkbox'>
+                            <span class='checklist'>Strict Mode</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input onchange="fnjsbp()" id='js-inspect' type='checkbox'>
+                            <span class='checklist'>Disable Inspect</span>
+                        </label>
+                    </div>
+                </div>
+                <textarea spellcheck="false" id='jsbp' class='codearea'></textarea>
+                <div>
+                    <button onclick="jsbpcopy()" class='copy'>Copy</button>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+        <div>
+            <p>Feel free to write a review and give suggestions <a>here</a></p>
+            <p>&copy; Yash Kolambekar 2021</p>
+        </div>
+        <div>
+            <a href='https://instagram.com/yashdidit'>
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href='https://instagram.com/yashdidit'>
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href='mailto:yashskolambekar2015@gmail.com'>
+                <i class="far fa-envelope"></i>
+            </a>
+
+            <a href='https://instagram.com/yashdidit'>
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>
