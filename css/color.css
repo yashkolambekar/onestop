@@ -63,3 +63,53 @@
   -webkit-appearance: none;
   margin: 0;
 }
+
+.con-text{
+    color:rgb(0, 0, 83);
+}
+
+#color-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#color-grid div{
+    padding: 50px 30px;
+    margin:20px;
+    border-radius: 20px;
+}
+
+#color-grid div p{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#color-grid div:nth-child(1){
+    background: white;
+    margin-left: 0;
+    color:black;
+}
+
+#color-grid div:nth-child(2){
+    background: red;
+    color:white;
+}
+
+#color-grid div:nth-child(3){
+    background: rgb(0, 200, 200);
+    color:indigo;
+}
+
+#color-grid div:nth-child(4){
+    background: black;
+    margin-right: 0;
+    color:darkseagreen;
+}
+
+#table-div{
+    margin:20px 0px;
+}
+
+a{
+    color:var(--color-6);
+}

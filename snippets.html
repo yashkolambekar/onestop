@@ -19,7 +19,7 @@
     <link href='css/snippets.css' rel="stylesheet">
     <link href='css/style-425.css' rel="stylesheet">
     <script src='js/snippets.js'></script>
-    <title>OneStop - Useful Codes</title>
+    <title>OneStop - Snippets</title>
 </head>
 
 <body>
@@ -99,10 +99,80 @@ document.onkeydown = function(e) {
 document.querySelectorAll(".show-on-js").display = block;</pre>
                 </div>
                 <br/>
-                Make sure that all the elements are suitable for the particular display property.
+                Make sure that all the elements are suitable for the particular display property
+                <br><br>
+                This is indeed not a full-proof solution to the problem, but this makes the process so complex and layered that most of the times, the person trying to get a sneak of your code will give up and your site will be safeguarded to an extent.
                 </p>
             </div>
         </div>
+
+        
+        <div class="s1">
+            <input id="s1i1" name="accordion-1" type="checkbox" />
+            <label for="s1i1">Hide Spinners (Stepup and down buttons) in number input</label>
+            <div class="textarea">
+                <p>
+                    Having spinners or buttons on a number input makes it look odd for a webpage and also ruins the text align in that particular input field, to avoid this copy paste the code given below and make changes in the selector as per your case
+                </p>
+                <div class="code">
+                    <pre><span class="w">/* CSS */</span>
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}</pre>
+                </div>
+            </div>
+        </div>
+        
+        <div class="s1">
+            <input id="s1i1" name="accordion-1" type="checkbox" />
+            <label for="s1i1">Generate Random Colors</label>
+            <div class="textarea">
+                <p>
+                    Having spinners or buttons on a number input makes it look odd for a webpage and also ruins the text align in that particular input field, to avoid this copy paste the code given below and make changes in the selector as per your case
+                </p>
+                <div class="code">
+                    <pre><span class="w">&#60;&#33;-- HTML Code--&#62;</span>
+&#60;h1&#62;
+&#60;button id="genNew"&#62;Generate New Random Color&#60;/button&#62;
+&#60;span id="color"&#62;&#60;/span&#62;
+&#60;/h1&#62;</pre>
+                </div>
+
+                <br><br>
+
+                <div class="code">
+                    <pre><span class="w">&#60;&#33;-- HTML Code--&#62;</span>
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    font-family: system-ui;
+}
+
+h1 {
+  background: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+span {
+  display: block;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: monospace;
+}</pre>
+                </div>
+
+
+            </div>
+        </div>
+
+
 
     </div>
 
@@ -116,7 +186,7 @@ document.querySelectorAll(".show-on-js").display = block;</pre>
                 <i class="fab fa-instagram"></i>
             </a>
 
-            <a href='https://instagram.com/yashdidit'>
+            <a href='https://github.com/yashkolambekar'>
                 <i class="fab fa-github"></i>
             </a>
 

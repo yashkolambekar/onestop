@@ -1,0 +1,18 @@
+.section{
+    flex-direction: column;
+}
+
+.cnl-grid{
+    display:grid;
+    grid-template-columns: 40% 40%;
+    row-gap: 200px;
+    column-gap: 150px;
+}
+
+.cnl-vid{
+    margin:10px 0px;
+    border-radius: 10px;
+    width: 100%;
+    min-height:100px;
+    height:280px;
+}

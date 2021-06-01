@@ -1,0 +1,29 @@
+.section{
+    flex-direction: column;
+}
+
+#sec-grid{
+    display: grid;
+    grid-template-columns:30% 30% 30%;
+    /* grid-template-columns:auto auto auto; */
+    column-gap: 50px;
+    row-gap: 300px;
+    justify-content: center;
+}
+
+.sec-grid-div{
+    display: grid;
+    grid-template-rows:230px 350px;
+}
+
+.ss{
+    padding:20px;
+    background:white;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 10px;
+}
+
+.ss img{
+    width:100%;
+}

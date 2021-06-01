@@ -137,16 +137,7 @@ footer div:nth-child(2){
 footer div:nth-child(2) a i{
     font-size: 30px;
     margin-left: 20px;
-}
-
-footer div:nth-child(2) a{
-    color: var(--color-5);
-    transition: 0.2s;
-}
-
-footer div:nth-child(2) a:hover{
-    color: var(--color-6);
-    filter: drop-shadow( 0px 0px 10px var(--color-6));
+    color:white;
 }
 
 .section{
