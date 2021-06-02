@@ -292,5 +292,5 @@ function jsbpcopy() {
     document.execCommand("copy");
     copyText.blur();
     document.getElementById("jsbp").value = "copied";
-    setTimeout(function () { document.getElementById("jsbp").value = jsbp; }, 1000);
+    setTimeout(function () { document.getElementById("jsbp").value = jsbp;}, 1000);
 }

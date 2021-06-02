@@ -1,0 +1,38 @@
+.section{
+    background: none;
+    background:linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,1)), url("../media/yash-img1.jpg");    background-size: cover;
+    background-position: center;
+}
+
+#intro-txt{
+    width:80%;
+}
+
+#socials{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: -webkit-fill-available;
+    justify-content: flex-end;
+}
+
+#socials a{
+    text-decoration: none;
+}
+
+#socials i{
+    font-size: 30px;
+    margin: 0px 10px;
+    color:white;
+}
+
+#smalltext{
+    font-size: 10px;
+}
+
+#smalltextdiv{
+    position:absolute;
+    bottom:50px;
+    width: 60%;
+    color:rgba(255,255,255,0.5);
+}
