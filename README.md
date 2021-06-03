@@ -11,4 +11,12 @@ And a short review of the course, it was very beginner friendly and well structu
 
 So I'll start explaining it now
 
-Very first, <a href="https://github.com/yashkolambekar/onestop/blob/main/media/logo.png">The Favicon</a> of this site is designed by me and it looks like a circle or O which stands for O from OneStop the name and there are 3 Os which stands for 3 languages i used here HTML, CSS and JS respectively also if you have a closer look at it, you will notice that there is a gap or break in every O which stands for that we will not be trapped in these languages and we can always move forward no matter wherever we are also the white space is connceted to all over the logo which shows the connectuon betweent 
+Very first, <a href="https://github.com/yashkolambekar/onestop/blob/main/media/logo.png">The Favicon</a> of this site is designed by me and it looks like a circle or O which stands for O from OneStop the name and there are 3 Os which stands for 3 languages i used here HTML, CSS and JS respectively also if you have a closer look at it, you will notice that there is a gap or break in every O which stands for that we will not be trapped in these languages and we can always move forward no matter wherever we are also the white space is connected to all over the logo which shows the connection between the languages.
+
+On the first page the interface is quite simple and self explanatory with some motivational texts and a link to about page just below that, also I have a sorted button list type of master menu or navigation panel to the right of it
+
+So lets move to the pages
+
+Starting from the boilerplates, I have sent this to you earlier too but I didn’t gave a brief, so this is to make the process of initializing hassle free and quick, we have vscode for that but this one gives more quick options also copy paste buttons makes it more easier to do it, I also planned to make an option to download the written files but it would have been an effort to extract the zip or rar file and then copy paste in the required directory, so I kept it simple and sweet
+
+The next comes <b>Instagram Accounts</b> page
