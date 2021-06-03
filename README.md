@@ -11,4 +11,4 @@ And a short review of the course, it was very beginner friendly and well structu
 
 So I'll start explaining it now
 
-Very first, <a href="https://github.com/yashkolambekar/onestop/blob/main/media/logo.png" target="_blank">The Favicon</a> of this site is designed by me 
+Very first, <a href="https://github.com/yashkolambekar/onestop/blob/main/media/logo.png" target="_top">The Favicon</a> of this site is designed by me 
