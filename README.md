@@ -5,4 +5,10 @@ And a short review of the course, it was very beginner friendly and well structu
  
  So therefore I made this site only in HTML, CSS and JavaScript because these are the only languages I am comfortable with now and maybe the only that I know, Apart from that fontawesome cdn for fonts and nothing more is used here
  
- As I told you earlier I tried to make it to help developers in their life but also 
+ As I told you earlier I tried to make it to help developers in their life, I am not sure how much justice does this site serves to the initial idea
+
+
+
+So I'll start explaining it now
+
+Very first, [The Favicon](https://github.com/yashkolambekar/onestop/blob/main/media/logo.png) of this site is designed by me 
