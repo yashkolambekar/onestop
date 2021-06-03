@@ -36,6 +36,8 @@ This site was made to showcase my skills so I didn’t added a lot of content in
 
 Thanks for reading this and also a big thanks for giving me a chance and sorry if the about page cringed you, I made it to add funny thing in the end
 
+Also the files are not well formatted and I am aware of that, I didn't changed that because it works so it's complex yet efficient just like a typewriter XD
+
 Waiting for your review
 Thanking you,
 Yash Kolambekar
