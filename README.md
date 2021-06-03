@@ -11,4 +11,4 @@ And a short review of the course, it was very beginner friendly and well structu
 
 So I'll start explaining it now
 
-Very first, <a href="https://github.com/yashkolambekar/onestop/blob/main/media/logo.png" target="_top">The Favicon</a> of this site is designed by me 
+Very first, <a href="https://github.com/yashkolambekar/onestop/blob/main/media/logo.png">The Favicon</a> of this site is designed by me and it looks like a circle or O which stands for O from OneStop the name and there are 3 Os which stands for 3 languages i used here HTML, CSS and JS respectively also if you have a closer look at it, you will notice that there is a gap or break in every O which stands for that we will not be trapped in these languages and we can always move forward no matter wherever we are also the white space is connceted to all over the logo which shows the connectuon betweent 
