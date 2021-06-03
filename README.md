@@ -36,3 +36,7 @@ This site was made to showcase my skills so I didn’t added a lot of content in
 
 Thanks for reading this and also a big thanks for giving me a chance and sorry if the about page cringed you, I made it to add funny thing in the end
 
+Waiting for your review
+
+Thanking you,
+Yash Kolambekar
