@@ -17,6 +17,8 @@ On the first page the interface is quite simple and self explanatory with some m
 
 So lets move to the pages
 
-Starting from the boilerplates, I have sent this to you earlier too but I didn’t gave a brief, so this is to make the process of initializing hassle free and quick, we have vscode for that but this one gives more quick options also copy paste buttons makes it more easier to do it, I also planned to make an option to download the written files but it would have been an effort to extract the zip or rar file and then copy paste in the required directory, so I kept it simple and sweet
+Starting from the <b>boilerplates</b>, I have sent this to you earlier too but I didn’t gave a brief, so this is to make the process of initializing hassle free and quick, we have vscode for that but this one gives more quick options also copy paste buttons makes it more easier to do it, I also planned to make an option to download the written files but it would have been an effort to extract the zip or rar file and then copy paste in the required directory, so I kept it simple and sweet
 
-The next comes <b>Instagram Accounts</b> page
+The next page <b>Websites</b> is one of my personal favourite because it holds power to bring a positive change in the life of a dev as it consists of the best handpicked websites wh
+
+The next comes <b>Instagram Accounts</b> page, it consists of the pages that I personally prefer seeing in my feed and are trustable and worth it, well I also planned to add your account there but it would have seemed like polishing butter to the judge so I didn’t 
