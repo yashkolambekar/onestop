@@ -32,4 +32,7 @@ At the end the <b>Snippets</b> page which I made to share my best snippets but g
 <br>
 
 <h2>Please note</h2>
-This site
+This site was made to showcase my skills so I didn’t added a lot of content in here, and I guess I did it successfully 
+
+Thanks for reading this and also a big thanks for giving me a chance and sorry if the about page cringed you, I made it to add funny thing in the end
+
