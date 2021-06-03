@@ -113,3 +113,7 @@
 a{
     color:var(--color-6);
 }
+
+#breakrgb{
+    display: none;
+}

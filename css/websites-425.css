@@ -1,0 +1,11 @@
+@media(max-width:425px){
+    .section{
+        padding:15px;
+        font-size: 15px;
+    }
+
+    .website-div{
+        width: 100%;
+        margin:50px 0px;
+    }
+}

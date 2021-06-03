@@ -1,0 +1,27 @@
+@media (max-width:425px) {
+    .section{
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    #breakrgb{
+        display: unset;
+    }
+
+    #color-b-1 div{
+        padding: 25px 20px;
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    #color-grid{
+        grid-template-columns: auto;
+    }
+
+    #color-grid div{
+        margin:10px 0px;
+    }
+
+    #table-div img{
+        width: 100%;
+    }
+}

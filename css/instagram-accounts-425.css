@@ -1,0 +1,18 @@
+@media(max-width:425px){
+
+    .section{
+        padding:15px;
+        font-size: 15px;
+    }
+
+    #sec-grid{
+        grid-template-columns: auto;
+        row-gap: 80px;
+    }
+
+    .sec-grid-div{
+        display: grid;
+        row-gap: 10px;
+        grid-template-rows:auto auto;
+    }
+}
