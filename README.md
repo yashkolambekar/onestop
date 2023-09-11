@@ -1,6 +1,6 @@
 # onestop
 
-<h2>This projeect was made as a part of coding boocamp by Shruti Panjwani</h2>
+<h2>This project was made as a part of coding boocamp by Shruti Panjwani</h2>
 
 Hey Shruti, firstly I want to thank you for giving everyone this opportunity to learn and showcase their skills and talent, and also not to mention the community itself which is going to be there with most of us ahead in this journey of achieving excellence
 
