@@ -1,4 +1,7 @@
 # onestop
+
+<h2>This projeect was made as a part of coding boocamp by Shruti Panjwani</h2>
+
 Hey Shruti, firstly I want to thank you for giving everyone this opportunity to learn and showcase their skills and talent, and also not to mention the community itself which is going to be there with most of us ahead in this journey of achieving excellence
 
 And a short review of the course, it was very beginner friendly and well structured, but I was unable to complete it because of some unintelligible problems from my side but it's just like I was not able to keep up with it on time but I will for sure complete it whenever possible
